@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    tools:context="com.example.tann.androidchatapp.Register_activity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/register_toolbar"
+        ></include>
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/basex10"
+        android:layout_marginRight="@dimen/basex10"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/register_name"
+        android:layout_marginLeft="@dimen/basex10"
+        android:layout_marginRight="@dimen/basex10"
+        android:layout_marginTop="@dimen/basex14"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textMultiLine|textEmailAddress" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/register_email"
+        android:layout_marginLeft="@dimen/basex10"
+        android:layout_marginRight="@dimen/basex10"
+        android:layout_marginTop="@dimen/basex14"
+        android:password="true"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textMultiLine" />
+    <EditText
+        android:id="@+id/register_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_password"
+        android:layout_marginLeft="@dimen/basex10"
+        android:layout_marginRight="@dimen/basex10"
+        android:layout_marginTop="10dp"
+        android:hint="Confirm Your Password"
+        android:password="true"
+        />
+
+    <Button
+        android:id="@+id/create_account_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_confirm_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/basex10"
+        android:layout_marginRight="@dimen/basex10"
+        android:layout_marginTop="@dimen/basex14"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/basex20" />
+</RelativeLayout>

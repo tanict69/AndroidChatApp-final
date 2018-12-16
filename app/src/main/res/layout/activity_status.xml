@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tann.androidchatapp.StatusActivity">
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/status_app_bar">
+
+    </include>
+
+    <EditText
+        android:id="@+id/satus_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/status_app_bar"
+        android:layout_marginLeft="@dimen/basex18"
+        android:layout_marginRight="@dimen/basex18"
+        android:layout_marginTop="106dp"
+        android:ems="10"
+        android:hint="Change status here ..."
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/save_change_status_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/satus_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="save changes"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/basex18" />
+
+</RelativeLayout>

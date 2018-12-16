@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/basex5">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/default_profile"
+        android:id="@+id/message_profile_image"
+        android:layout_marginTop="@dimen/basex10"/>
+
+    <TextView
+        android:id="@+id/receiver_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:background="@drawable/receiver_message_layout"
+        android:padding="@dimen/basex20"
+        android:text="receiver"
+        android:textColor="@color/colorwhite"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/sender_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sender_message_layout"
+        android:padding="@dimen/basex20"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignTop="@+id/receiver_message_text"
+        android:layout_marginEnd="11dp"
+        android:text="sender" />
+    <ImageView
+        android:id="@+id/message_receiver_imgView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="@dimen/basex5"
+        android:visibility="gone"
+
+
+
+        />
+    <ImageView
+        android:id="@+id/message_sender_imgView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/basex5"
+        android:visibility="gone"
+       />
+</RelativeLayout>
